@@ -48,7 +48,7 @@ class CounterMatrix(object):
         gtm = {c: good_turing(c) for c in range(threshold)}
         return {k: v for k, v in gtm.items() if v > 0}  # can't have 0 counts
 
-    @cached_property
+    @cached_property()
     def unigram_distribution(self):
         counts = {token: sum(follower.values()) 
                   for token, follower in self._dict.items()}
