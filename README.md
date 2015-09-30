@@ -1,6 +1,8 @@
 # BigramsCompleteMe
 BigramsCompleteMe is a sublime text plugin that sorts autocompletion results by their probability given the previous word. In many cases, you can repeat an existing phrase such as "sublime text" with just the first letters of each word (e.g. `s`, `space`, `tab`, `t`, `space`, `tab`).
 
+Note that the use of the popup box is for demonstration only. We advise that the user disables the automatic popup box (`"auto_complete": false`) and simply hit `tab` when she thinks the plugin will know the right word.
+
 ![Example usage](https://i.gyazo.com/05161b7d00b08d9f2427e3c20d655182.gif)
 
 ## Installation
@@ -15,3 +17,4 @@ At present, BigramsCompleteMe does not work with sublime's fuzzy autocomplete fe
 
 - Fuzzy completion by remapping tab to `insert_best_bigram_completion`. This will involve a fair ammount of code due to cycle through options, etc...
 - Pretrained bigram models in addition to current-file bigrams.
+- Trigrams?!
